@@ -1,0 +1,42 @@
+//////Series 1+(2+3*4)+(5+6*7*8*9*10)+....nth term
+///MY Name Is Rafiul Islam
+///Daffodil International University in cse
+
+#include<stdio.h>
+
+int main()
+{
+    int n,k, i, j, count=2, sum=1, multiple = 1,add,h=2,g=0,m;
+    int arr[300];
+    scanf("%d", &n);
+    for(k = 2; k <= n; k++)
+    {
+        for(i = count; i >= count; i++)
+        {
+            for(j = 1; j <= i; j++)
+
+            {
+                count++;
+                multiple = multiple*count;
+               // printf("%d\n", multiple);
+
+
+            }
+            count++;
+            m=multiple;
+            multiple=1;
+
+
+
+        }
+
+           add= h+m+g;
+            sum=sum+add;
+
+
+            h=0;
+            g=count;
+
+    }
+    printf("Sum is = %d\n", sum);
+}
